@@ -36,4 +36,5 @@ jobs:
       - name: Run unit tests
         uses: docker://php:7.4-cli-alpine
         with:
-          args: ./vendor/bin/phpunit
+          entrypoint: ./vendor/bin/phpunit
+          args: --bootstrap src/autoload.php tests
