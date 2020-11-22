@@ -37,4 +37,4 @@ jobs:
         uses: docker://php:7.4-cli-alpine
         with:
           entrypoint: ./vendor/bin/phpunit
-          args: --bootstrap src/autoload.php tests
+          args: --bootstrap vendor/autoload.php tests
